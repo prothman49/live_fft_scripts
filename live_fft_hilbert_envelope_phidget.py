@@ -159,7 +159,7 @@ class PhaseLockNode:
                 t_delayed = t + phase_delay
 
                 voltage = 1.5 + 1.5 * math.sin(2 * math.pi * self.waveform_freq * t_delayed)
-                voltage = max(0.0, min(3.0, voltage))
+                voltage = max(0.0, min(4.2, voltage))
 
                 try:
                     if self.voltage_output_0:
